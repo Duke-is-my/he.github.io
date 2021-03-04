@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppOnFly VPS</title>
+    <meta name="version" content="2020.9.21.2" />
+    <link rel="stylesheet" href="/lib/jqueryui/jquery-ui.min.css" />
+    
+    
+        <link rel="stylesheet" href="/css/winstrap.min.css" />
+        <link rel="stylesheet" href="/css/cloud-bastards.min.css?v=GY2NNsKfTJIMauOf21uY3OEFNFrbECYGaH1HFAtaWyQ" />
+    
+    <script>var exports = {};</script>
+    <script src="/lib/js-cookie/src/js.cookie.js"></script>
+    <script src="/lib/requirejs/require.js"></script>
+    <script src="/scripts/RequireConfig.js?v=XLbmrTTahKtV9079PiuC_TqFXFkG8ilqpvePY7c_KCQ"></script>
+
+    <script type="text/javascript">
+        require(["jquery", "App"],
+            function ($, App) {
+                var app = new App.default();
+                app.load();
+            });
+    </script>
+    
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WKMM873');
+        </script>
+        <!-- End Google Tag Manager -->
+</head>
+<body class="windows-background">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKMM873" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+    
+
+    <div class="container body-content">
+        
+<form id="LoginForm" class="hidden" method="post">
+    <div id="LoginScreen">
+        <div class="row row-xs">
+            <a href="https://vps.apponfly.com"><img id="LoginUserSymbol" src="images/people.png" alt="Administrator" class="col-xs-8 col-xs-offset-8" /></a>
+        </div>
+        <div id="LoginUsernamePre" class="row row-xs login-username">
+            Administrator
+        </div>
+        <div class="row row-xs">
+            <div class="col-xs-12 col-xs-offset-5" style="padding-right: 0px !important;">
+                <input id="Password" type="password" class="form-control login-pass-input" style="max-width: inherit;" />
+            </div>
+            <div class="col-xs-1" style="padding-left: 0px !important;">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default btn-login" type="button">
+                            <span class="glyph glyph-arrow-right"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8IXggIM-4npArfWt68UxCzex7XtpqAMKdteYZiPZFKLNno1c7JP_3WJ40wMeNVEpZk0YGiWWcX8_KTGjP7UOcyhu_hfASbR8ntsxPuh2CCwImrycWKMrSFcvQQCIvgVH6I03K3Va8N2MDn_8erkJO6AwANtV3VZr4f3oS7DPvJIbEFAHh6aEuWtai602CR6p4w" /></form>
+
+
+    </div>
+    
+    <div id="AppVersion">2020.9.21.2</div>
+    
+    <style type="text/css">
+        #CurrentUserActions {
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        var isError = false;
+        var model = {"eaN_password":"Voluptua253","eaN_username":"Administrator","eaN_address":"10.200.167.25","eaN_full_address":"10.200.167.25","gatewayUrl":"https://htmlgw2.apponfly.com:4443/AccessNow/sso?endURL=$https://vps.apponfly.com","isTrial":true,"vmId":"e2949dc1-630f-4ac9-b9b8-f3ce9b441ee9"};
+
+        if (isError) {
+            alert('');
+
+                window.parent.location.href = "/Portal/Logout?m=landing";
+                        } else {
+            require(["jquery", "./CB", "RdpResolverPage"],
+                function($, CB, RdpResolverPage) {
+                    $(document).ready(function () {
+                        var activeSubscriptionId = '';
+                        var page = new RdpResolverPage.default(false, activeSubscriptionId, model, "$https://vps.apponfly.com");
+                        page.bindPage();
+
+                    });
+                });
+        }
+    </script>
+
+</body>
+</html>
